@@ -114,11 +114,11 @@ input {
 }
 
 .btn-slide:hover {
-    background: #b68733 !important;
+    background: #c800ff !important;
     cursor: pointer;
     color: white;
 }
 
 :root {
-    --orange: orange
+    --orange: #00ffea
 }

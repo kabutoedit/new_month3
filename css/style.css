@@ -56,15 +56,34 @@
 .main_block {
     padding: 100px 0;
     background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.league_of_street_logo {
+     width: 500px;
+     height: 400px;
+ }
+
+.main_block_text {
+    font-size: 2.5em;
+}
+
+.inner_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btn-gett {
+    margin-top: 50px;
+    height: 100px;
+    width: 500px;
+    font-size: 2.5em;
 }
 
 /* BUTTONS COLOR PICKER */
-
-.colors-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-}
 
 .btn-color {
     border-radius: 20px;
