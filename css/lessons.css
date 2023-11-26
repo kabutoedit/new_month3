@@ -35,22 +35,21 @@
 }
 
 .tab_content_block {
-    width: 700px;
-    border: 1px solid var(--orange);
-    padding: 20px;
+    width: 400px;
     border-radius: 10px;
     text-align: center;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: 170px;
+    height: 550px;
 }
 
-.tab_content_block p {
-    color: white;
-    margin-top: 10px;
+.tab_content_block img {
+    width: 400px;
+    height: 550px;
     text-align: justify;
+    border-radius: 10px;
 }
 
 .tab_content_items {

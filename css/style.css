@@ -27,7 +27,7 @@
     font-size: 22px;
     height: 60px;
     width: fit-content;
-    background: var(--orange);
+    /*background: var(--orange);*/
     padding: 8px;
     color: white;
     border-radius: 5px;
@@ -49,6 +49,11 @@
 
 .menu_link a:hover {
     text-decoration: underline;
+}
+
+.logotype img {
+    width: 150px;
+    height: 100px;
 }
 
 /* MAIN BLOCK */
@@ -77,9 +82,8 @@
 }
 
 #btn-gett {
-    margin-top: 50px;
-    height: 100px;
-    width: 500px;
+    height: 80px;
+    width: 350px;
     font-size: 2.5em;
 }
 

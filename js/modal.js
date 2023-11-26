@@ -1,9 +1,8 @@
 // MODAl
 
 const modal = document.querySelector('.modal')
-const modalBtn = document.querySelector('#btn-get')
+const modalBtn = document.querySelectorAll('.btn')
 const modalClose = document.querySelector('.modal_close')
-
 
 const openModal = () => {
     modal.style.display = 'block'
@@ -15,9 +14,13 @@ const closeModal = () => {
     document.body.style.overflow = ''
 }
 
-setTimeout(openModal,10000)
+setTimeout(openModal, 30000)
 
-modalBtn.onclick = () => openModal()
+modalBtn.forEach(item => {
+
+    item.onclick = () => openModal()
+
+})
 modalClose.onclick = () => closeModal()
 modal.onclick = (event) => {
     if (event.target === modal) {
@@ -27,10 +30,12 @@ modal.onclick = (event) => {
 
 const scrollCheck = () => {
     if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 1) {
-    openModal()
-    window.removeEventListener("scroll", scrollCheck)
-}
+        openModal()
+        window.removeEventListener("scroll", scrollCheck)
+    }
 
 }
 
 window.addEventListener("scroll", scrollCheck)
+
+
