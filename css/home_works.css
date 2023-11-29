@@ -38,6 +38,7 @@
     height: 500px;
     width: 500px;
     border: 1px solid var(--orange);
+    border-radius: 25px;
     position: relative;
     margin: 0 auto;
 }

@@ -54,6 +54,21 @@
     background: black;
     padding: 100px 0;
 }
+.bird_block {
+    display: flex;
+    justify-content: center;
+    height: 750px;
+}
+
+.birdLogo {
+    height: 250px;
+}
+
+.hedder {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 .tab_content_block {
     width: 400px;
@@ -64,6 +79,14 @@
     flex-direction: column;
     justify-content: center;
     height: 550px;
+}
+
+.tab_content_block p {
+    color: white;
+}
+
+.colibri {
+    transform: rotate(-90deg)
 }
 
 .tab_content_block img {
@@ -88,6 +111,7 @@
     height: 30px;
     color: white;
     border: 1px solid var(--orange);
+    border-radius: 3px;
     text-align: center;
     font-size: 20px;
     cursor: pointer;

@@ -147,3 +147,11 @@ fetch(`https://jsonplaceholder.typicode.com/todos/1`)
                 <p style=" color: ${data.completed ? 'green' : 'red'}">${data.completed}</p>
                 <span>${data.id}</span>`
     })
+
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data)
+    })
+
+
