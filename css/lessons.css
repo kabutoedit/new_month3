@@ -1,3 +1,24 @@
+/*WINDBREAKER*/
+
+.windbreaker {
+    padding-top: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.windbreaker img {
+    width: 500px;
+    height: 300px;
+}
+
+.windbreaker p {
+    color: white;
+    width: 764px;
+    height: 100px;
+}
 
 /* PHONE CHECKER */
 
@@ -50,13 +71,16 @@
     height: 550px;
     text-align: justify;
     border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
 }
 
 .tab_content_items {
     width: 400px;
     display: flex;
     flex-direction: column;
-    row-gap: 5px;
+    row-gap: 10px;
 }
 
 .tab_content_item {

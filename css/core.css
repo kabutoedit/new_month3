@@ -25,6 +25,17 @@ body {
     border-radius: 8px;
 }
 
+.btnreg {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid var(--orange);
+    background: black;
+    color: var(--orange);
+    border-radius: 8px;
+}
+
 .btn:hover {
     background: #414349;
 }
@@ -120,5 +131,5 @@ input {
 }
 
 :root {
-    --orange: #c900ff
+    --orange: #00ffe1
 }

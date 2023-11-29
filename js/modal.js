@@ -1,7 +1,7 @@
 // MODAl
 
 const modal = document.querySelector('.modal')
-const modalBtn = document.querySelectorAll('.btn')
+const modalBtn = document.querySelectorAll('.btnreg')
 const modalClose = document.querySelector('.modal_close')
 
 const openModal = () => {

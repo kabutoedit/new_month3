@@ -105,14 +105,45 @@ const card = document.querySelector('.card'),
     btnPrev = document.querySelector('#btn-prev'),
     btnNext = document.querySelector('#btn-next')
 
-let count = 0
+let count = 1
+
+
 
 btnNext.onclick = () => {
     count++
-    fetch(`https://jsonplaceholder.typicode.com/todos/1${count}`)
+    if (count > 200) {
+        count = 1
+    }
+    fetch(`https://jsonplaceholder.typicode.com/todos/${count}`)
+        .then(response => response.json())
+        .then(data => {
+             card.innerHTML = `
+                <p>${data.title}</p>
+                <p style=" color: ${data.completed ? 'green' : 'red'}">${data.completed}</p>
+                <span>${data.id}</span>`
+        })
+}
+
+btnPrev.onclick = () =>{
+    count--
+    if (count < 1) {
+        count = 200
+    }
+    fetch(`https://jsonplaceholder.typicode.com/todos/${count}`)
         .then(response => response.json())
         .then(data => {
             card.innerHTML = `
-            <p> ${data.title}</p>`
+                <p>${data.title}</p>
+                <p style=" color: ${data.completed ? 'green' : 'red'}">${data.completed}</p>
+                <span>${data.id}</span>`
         })
 }
+
+fetch(`https://jsonplaceholder.typicode.com/todos/1`)
+    .then(response => response.json())
+    .then(data => {
+        card.innerHTML = `
+                <p>${data.title}</p>
+                <p style=" color: ${data.completed ? 'green' : 'red'}">${data.completed}</p>
+                <span>${data.id}</span>`
+    })
