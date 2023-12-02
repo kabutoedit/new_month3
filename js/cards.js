@@ -12,7 +12,7 @@ const cards = async () => {
         cardsBlock.innerHTML = posts.map(post => `
             <div class="card">
                 <img src="../img/y_bin.png">
-                <h2>${post.title}</h2>
+                <h4>${post.title}</h4>
                 <p>${post.body}</p>
             </div>
         `).join('');

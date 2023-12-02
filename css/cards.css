@@ -1,10 +1,15 @@
 .cardsBlock {
-    background-color: #fff;
+    background-color: black;
     display: flex;
     gap: 20px;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 120px 50px 50px 50px;
+}
+
+.card h4 {
+    color: black;
+    padding-bottom: 50px;
 }
 
 .card {
@@ -14,8 +19,8 @@
     text-align: center;
     height: 400px;
     width: 300px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .card img {
